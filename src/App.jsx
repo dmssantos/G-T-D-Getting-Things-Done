@@ -1,8 +1,18 @@
+import GlobalStyle from "./globalStyle";
+import WrapperApp from "./AppStyle";
+
+import Login from "./pages/Login";
+
 function App() {
   // prettier-ignore
   return (
     <div>
-      Hello World
+      <WrapperApp>
+        <main>
+          <Login />
+        </main>
+      </WrapperApp>
+      <GlobalStyle />
     </div>
   );
 }
